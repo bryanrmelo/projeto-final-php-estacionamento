@@ -43,5 +43,3 @@ echo  "<script>alert('O valor a ser pago é de R$$preco.');</script>";
 
 echo '<a class="botoes cor-gradiente text-white" href="estacionamento.html" role="button">Voltar</a>';
 
-
-
