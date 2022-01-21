@@ -39,5 +39,7 @@ if ($hora < 0);{
 
 $preco = ($valor * 6) * 3.5;
 
-echo ("O valor a ser pago é de R$$preco.");
+echo  "<script>alert('O valor a ser pago é de R$$preco.');</script>";
+
+
 
