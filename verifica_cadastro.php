@@ -68,7 +68,9 @@ if ($exist == TRUE){
 
             insereEntrada($placa, $date);
 
-            echo("Registrada entrada: $data");
+            echo  "<script>alert('Registrada entrada: $data');</script>"; 
+
+            echo '<a class="botoes cor-gradiente text-white" href="estacionamento.html" role="button">Voltar</a>';
 
         }
     } else{
