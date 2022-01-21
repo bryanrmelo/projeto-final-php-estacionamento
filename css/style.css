@@ -23,7 +23,7 @@ body {
 }
 
 .imagem-topo {
-    padding: 40px 40px 20px 40px;
+    padding: 40px 40px 40px 40px;
     background-image: linear-gradient(to right, crimson, indigo);
     border-bottom: 4px solid black;
 }
@@ -91,5 +91,15 @@ input {
 }
 
 .text-white {
+    color: white;
+}
+
+.link {
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: none;
     color: white;
 }

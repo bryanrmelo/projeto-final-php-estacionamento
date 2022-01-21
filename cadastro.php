@@ -9,6 +9,11 @@
     $ano_modelo = $_POST['ano_modelo'];
     $cor = $_POST['cor'];
 
+    $data = date("y-m-d H:i:s");
+
+    $placa = $_POST['ID-CAR'];
+
+    insereEntrada($placa, $data);
 
     insereCarro($id_placa, $marca, $modelo, $ano_modelo, $cor);
 

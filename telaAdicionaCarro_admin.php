@@ -42,10 +42,10 @@ if ($_SESSION['nome_usuario'] == 'admin' && $_SESSION['senha_usuario'] == 'maste
                 <label for="ImputCor" class="form-label">Cor</label>
                 <input type="text" class="form-control" name="cor" id="ImputCor">
             </div>
-
-            <a class="botoes cor-gradiente text-white" href="home_admin.php" role="button">Voltar</a>
-            <button type="submit" class="botoes cor-gradiente text-white">Cadastrar Carro</button>
-
+            <div class="container" style="margin: 40px 0 40px 0;">
+                <a class="botoes cor-gradiente text-white link" style="margin-right: 20px" href="home_admin.php" role="button">Voltar</a>
+                <button type="submit" class="botoes cor-gradiente text-white link">Cadastrar Carro</button>
+            </div>
 
         </form>
     </div>
