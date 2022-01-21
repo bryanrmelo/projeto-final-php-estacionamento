@@ -1,7 +1,8 @@
 <?php
-    include_once('estacionamentoDao.php');
-    
-    print_r($_POST);
+include_once('estacionamentoDao.php');
+
+    date_default_timezone_set('America/Sao_Paulo');
+
 
     $id_placa = $_POST['id_placa'];
     $marca = $_POST['marca'];
@@ -11,11 +12,12 @@
 
     $data = date("y-m-d H:i:s");
 
-    $placa = $_POST['ID-CAR'];
-
-    insereEntrada($placa, $data);
+    $placa = $_POST['id_placa'];
 
     insereCarro($id_placa, $marca, $modelo, $ano_modelo, $cor);
 
-    header('Location:estacionamento.html');
-?>
+    insereEntrada($placa, $data);
+
+    echo  "<script>alert('Registrada entrada: $data');</script>";
+
+    echo '<a class="botoes cor-gradiente text-white" href="estacionamento.html" role="button">Voltar</a>';
