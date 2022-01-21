@@ -64,6 +64,7 @@ if ($exist == TRUE){
             include_once('estacionamentoDao.php');
 
             $placa = $_POST['ID-CAR'];
+            
             $date = $data;
 
             insereEntrada($placa, $date);
