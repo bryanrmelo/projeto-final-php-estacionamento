@@ -13,8 +13,6 @@ if ($loginValido) {
     session_start();
     $_SESSION['nome_usuario'] = $usuario;
     $_SESSION['senha_usuario'] = $senha;
-    $_SESSION['id_usuario'] = 10;
-    
 
     header('Location:home_admin.php');
     die();
