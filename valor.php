@@ -32,12 +32,15 @@ $hora = $h1[0];
 
 $valor = $hora;
 
+$preco = ($valor * 6) * 5.5;
+
 if ($hora < 0);{
     $minuto = $h1[1];
     $valor = $minuto / 10;
+    $preco = ($valor) * 5.5;
 }
 
-$preco = ($valor * 6) * 3.5;
+
 
 echo  "<script>alert('O valor a ser pago é de R$$preco.');</script>"; 
 
