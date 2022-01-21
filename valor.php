@@ -32,12 +32,14 @@ $hora = $h1[0];
 
 $valor = $hora;
 
-$preco = ($valor * 6) * 5.5;
 
-if ($hora < 0);{
+
+if ($hora <= 0){
     $minuto = $h1[1];
     $valor = $minuto / 10;
     $preco = ($valor) * 5.5;
+} else{
+    $preco = ($valor * 6) * 5.5;
 }
 
 
